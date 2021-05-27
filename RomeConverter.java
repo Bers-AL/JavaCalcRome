@@ -75,7 +75,6 @@ public class RomeConverter {
             previous = current;
             i += 1;
         }
-        if (arabic > 10) throw  new IllegalArgumentException("Одно из чисел риских чисел больше 10");
         return arabic;
     }
 }
