@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class Main {
@@ -35,8 +34,8 @@ public class Main {
                 firstInt = RomeConverter.RomanToint(inputArrey[0]);
                 secondInt = RomeConverter.RomanToint(inputArrey[2]);
             } else {
-                secondInt = Integer.parseInt(inputArrey[2]);
                 firstInt = Integer.parseInt(inputArrey[0]);
+                secondInt = Integer.parseInt(inputArrey[2]);
             }
         } catch (Exception e) {
             throw new IllegalArgumentException("Числа разных форматов");
@@ -48,7 +47,7 @@ public class Main {
         if (firstInt > 10||secondInt > 10) throw  new IllegalArgumentException("Одно из чисел больше 10");
 
         // Вывод результата
-        if (typeResult) System.out.println("Результат: " + RomeConverter.IntToRoman(calculate(firstInt, secondInt, operator)));
+        if (typeResult) System.out.println("Результат: " + RomeConverter.intToRoman(calculate(firstInt, secondInt, operator)));
         else System.out.println("Результат: " + calculate(firstInt, secondInt, operator));
     }
 
