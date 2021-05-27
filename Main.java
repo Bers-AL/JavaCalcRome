@@ -30,7 +30,7 @@ public class Main {
 
         //        ---------Считает одинаковые числа!----------
         try {
-            if (checkInput(inputArrey[0]) & checkInput(inputArrey[2])) {
+            if (checkInput(inputArrey[0]) && checkInput(inputArrey[2])) {
                 typeResult = true;
                 firstInt = RomeConverter.RomanToint(inputArrey[0]);
                 secondInt = RomeConverter.RomanToint(inputArrey[2]);
