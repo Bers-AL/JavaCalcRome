@@ -45,7 +45,7 @@ public class Main {
         operator = inputArrey[1];
 
         // Проверка величины введенных чисел
-        if (firstInt > 10||secondInt > 10) throw  new IllegalArgumentException("Одно из чисел арабских чисел больше 10");
+        if (firstInt > 10||secondInt > 10) throw  new IllegalArgumentException("Одно из чисел больше 10");
 
         // Вывод результата
         if (typeResult) System.out.println("Результат: " + RomeConverter.IntToRoman(calculate(firstInt, secondInt, operator)));
