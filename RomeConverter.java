@@ -2,7 +2,7 @@ import java.util.*;
 
 public class RomeConverter {
 
-    public static String intToRoman(int number) {
+    public static String IntToRoman(int number) {
         if (number > 10) throw  new IllegalArgumentException("Одно из чисел больше 10");
         if (number >= 4000 || number <= 0)
             return null;
